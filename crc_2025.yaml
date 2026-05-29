@@ -1,0 +1,9 @@
+path: D:\ultralytics-main\ultralytics\data\
+train: crc2025/images/train
+val: crc2025/images/val
+
+# number of classes
+nc: 10
+
+# class names
+names: [ 'CA001', 'CA002', 'CB001', 'CB002', 'CC001', 'CC002', 'CD001', 'CD002', 'W001', 'W002',]
