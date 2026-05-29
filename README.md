@@ -2,7 +2,7 @@
 
 # CRC2025 3D Detect DYL
 
-这是一个2025年中国机器人大赛机器人先进视觉赛-3D识别项目的完整项目代码，可部署在香橙派 AI Pro 开发板上，使用的相机是奥比中光 Astra Pro Plus 型号。目前只有专项赛单一视角的运行脚本，后续我会更新三视角的运行脚本。各个模块需要分开编译，后续我会更新成一键部署。代码还有很多待改进的地方，后续我也会慢慢完善，欢迎大家一起学习交流。  
+这是一个2025年中国机器人大赛机器人先进视觉赛-3D识别项目的完整项目代码，可部署在香橙派 AI Pro 开发板上，使用的相机是奥比中光 Astra Pro Plus 型号。已经更新专项赛单一视角和三视角的运行脚本。各个模块需要分开编译，后续我会更新成一键部署。代码还有很多待改进的地方，后续我也会慢慢完善，欢迎大家一起学习交流。  
 
 **作者**: xensedyl  
 **Github**: https://github.com/xensedyl/crc2025_3d_detect_dyl.git
@@ -240,12 +240,28 @@ pip install ultralytics -i https://pypi.tuna.tsinghua.edu.cn/simple/
   mkdir ~/Desktop/result_r
   ```
 
-* 将 `shibie1.sh` 脚本复制到桌面：
+* 将 `shibie1.sh` 和 `shibie2.sh` 脚本复制到桌面：
 
   ```bash
   cp /home/HwHiAiUser/crc2025_3d_detect_dyl/shibie1.sh ~/Desktop/
+  cp /home/HwHiAiUser/crc2025_3d_detect_dyl/shibie2.sh ~/Desktop/
   ```
 
+---
+
+### 6. 运行程序
+
+* 第一轮单视角比赛命令：
+
+  ```bash
+  bash ~/Desktop/shibie1.sh
+  ```
+
+* 第二轮三视角比赛命令：
+
+  ```bash
+  bash ~/Desktop/shibie2.sh
+  ```
 ---
 
 **感谢您的阅读！**
